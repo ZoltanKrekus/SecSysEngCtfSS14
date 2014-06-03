@@ -1,0 +1,17 @@
+PHP:
+Tutorial: http://www.w3schools.com/PHP/
+Language Reference: http://www.php.net/manual/en/langref.php
+
+BASH/SHELL:
+Tutorial: http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
+Language Reference: http://www.gnu.org/software/bash/manual/bashref.html
+
+PYTHON:
+Tutorial: https://docs.python.org/2/tutorial/
+Language Reference: https://docs.python.org/reference/
+
+RUBY:
+Documentation: https://www.ruby-lang.org/en/documentation/
+Essentials: http://www.techotopia.com/index.php/Ruby_Essentials
+Quickstart: https://www.ruby-lang.org/en/documentation/quickstart/
+

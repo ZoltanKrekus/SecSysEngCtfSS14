@@ -1,0 +1,32 @@
+SSH:
+OpenVPN
+
+SNIFFER:
+wireshark
+
+SCANNER:
+nmap
+
+PENETRATION TESTING TOOLS:
+(optional) metasploit (ist bei Zoltan bereits aufgesetzt)
+(optional) Backtrack in einer VM (ist bei Zoltan bereits aufgesetzt)
+
+DEV:
+Eclipse
+Tomcat
+PHP
+beliebiger LAMP Stack
+Python
+Ruby
+Haskell/Hugs
+Java JDK+JRE
+C++/GCC
+wget
+
+FIREFOX ADD INS:
+firebug
+tamper-data
+http-poster
+
+
+

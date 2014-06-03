@@ -1,0 +1,7 @@
+HOWTO: VPN Verbindung herstellen
+
+Einmalige Änderung des Passworted mittels ssh: Im Folder vpn per Skript "ssh-connect.sh" (ACHTUNG: Die Varibale USER muss vorher angepasst werden)
+
+
+Im Folder "vpn" gibt es das Shell Skript vpn-connect.sh, mit diesem wird eine VPN Verbindung zur CTF-Umgebung hergestellt.
+

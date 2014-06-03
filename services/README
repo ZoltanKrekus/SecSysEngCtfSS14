@@ -1,0 +1,7 @@
+In diesem Folder befindet sich pro Service ein Sub-Folder, wobei jeder Sub-Folder folgendes enthält:
+- ein Backup des Source Codes der diversen Services, welche es anzugreifen gilt, 
+- der von uns gefixte Source Code jener Services, deren Schwachstellen wir identifizieren konnten,
+- Scripts, die von uns geschrieben wurden, um gefundene Schwachstellen automatisiert auszunutzen.
+- so wie ggf. gesammelte Infos/Erkenntnisse zu den div. Services.
+
+Anhand des Beispiel Ordners "SampleService" wird die innere Struktur der Sub-Folder veranschaulicht.
