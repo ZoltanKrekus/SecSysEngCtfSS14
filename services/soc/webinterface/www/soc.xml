@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <xhtml:script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="/script.js" type="application/javascript"/> -->
+<messages xmlns:if="Wt.WTemplate.conditions">
+
+	<message id="soc.skeleton">
+		<div id="page">
+			<div id="header">
+				<div id="logo-wrapper">
+					<img src="soc.png" id="logo" alt="" />
+				</div>
+				<div id="title-wrapper">
+					<h1 class="big">Starfleet Officer Console</h1>
+				</div>
+			</div>
+			<div id="content" class="clearfix">
+				<div id="column-left" class="columns columnContainer">
+					<div id="column-right" class="columnContainer">
+						${page-navigation}
+						${page-content}
+					</div>
+				</div>
+				<div style="text-align: center; padding-bottom: 5px;">&copy; ESSE 2014</div>
+			</div>
+		</div>
+	</message>
+
+	<message id="soc.navigation">
+		<div id="navigation" class="column">
+			<ul>
+				${nav-welcome}
+				${nav-holodeck}
+				${nav-ksap}
+				${nav-logbook}
+				${nav-planetDB}
+				${nav-spaceshipAI}
+				${nav-spacecomservice}
+				${nav-checklist}
+				${nav-logout}
+			</ul>
+			<hr />
+			<ul>
+				${nav-impressum}
+			</ul>
+		</div>
+	</message>
+
+	<message id="soc.navigation-element">
+		<li>${navigation-element}</li>
+	</message>
+
+	<message id="soc.page-content">
+		<div id="page-content" class="column">
+			<noscript><h1 style="color: red;">Please activate javascript, logout, reload page and login again. Sorry, but you'll need javascript.</h1></noscript>
+			${page-content}
+		</div>
+	</message>
+
+	<message id="soc.welcome">
+		<h1>Welcome to SOC</h1>
+		<div class="dark">
+			<p>
+				The SOC allows officers to fulfill important tasks to keep the current mission on track.
+			</p>
+			<p>
+				Therefore, the SOC provides key services like the <em>Starship Configuration Center</em>, <em>Planet Database</em>, <em>Logbook Generator</em>, <em>Holodeck Program Database</em> and <em>Kartographic Services</em>.
+			</p>
+			<p>
+				The services were planned and implemented taking into account the latest 23rd century security findings!
+			</p>
+		</div>
+	</message>
+
+	<message id="soc.holodeck">
+		<h1>Holodeck Program Database</h1>
+		<iframe data-port="8122" data-url="main.php" ></iframe>
+	</message>
+	<message id="soc.ksap">
+		<h1>Klingon Spaceship Administration Program (K-SAP)</h1>
+		<div class="dark">
+			<p>K-SAP enables Klingon Strategic Operations Officers to easily manage their spaceship fleet.</p>
+            <h2>Functionality</h2>
+			<p>Using K-SAP, one can store spaceships with a specified key and list spaceships stored with the specified key. The concrete usage is displayed after a successful login to the service.</p>
+			<p>Unlike humans, Klingons like to interact with a computer in a very old-fashioned way, called CLI. To manage the fleet using K-SAP, a connection to Port 8449 using a Client/Server-Protocol has to be established.</p>
+		</div>
+	</message>
+	<message id="soc.logbook">
+		<h1>Logbook</h1>
+		<iframe data-port="8585" data-url="main.php" ></iframe>
+	</message>
+	<message id="soc.planetDB">
+		<h1>Planet Database</h1>
+		<iframe data-port="8998" data-url="index.php" height="800" ></iframe>
+	</message>
+    <message id="soc.spaceshipAI">
+		<h1>Spaceship AI</h1>
+		<div class="dark">
+			<p><strong>Welcome to the AI Engine of the Spaceship</strong></p>
+            <h2>Functionality</h2>
+			<p>After you register, you can create fascinating artifical intelligence powered navigating software with the newest high-level programming language "x86 Assembly Subset" and it will be able to navigate you through the galaxy while you are lying hibernated in the back part of the ship.</p>
+			<p>As there are more programmers on this huge Spaceship, of course there will be other users on this server as well - naturally, in a perfectly separated environment.</p>
+			<p>Connect through the bleeding edge raw TCP/IP protocol on port 4545!</p>
+			<p>You can find more information about the programming in the DOCUMENTATION file.</p>
+		</div>
+    </message>
+    <message id="soc.spacecomservice">
+		<h1>Spacecom Service</h1>
+		<div class="dark">
+			<h2>Welcome to the Advanced Space Communication Service!</h2>
+			<h3>The advanced Chatsystem for Interspace</h3>
+			<p>Chat with  your favorite enemy klingon Leader, declare war on other ships and much more!</p>
+            <p>Connect to the spacecom Server on your Spaceship with the best chat client ever: spacecom_client.py, you will find the client in the home dir of spacecomservice. Client connects to your own chatserver on default port 9999, for other options check the client usage</p>
+            <h2>Client Usage</h2>
+            <pre>usage: spacecom_client.py [-h] [-s [Host]] [-p [Port]] [-u [Nick]]
+usage: spacecom_client.py [-h] [-s [Host]] [-p [Port]] [-u [Nick]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s [Host], --server [Host]
+                        server ip or hostname (default: localhost)
+  -p [Port], --port [Port]
+                        serverport to use (default: 9999)
+  -u [Nick], --user [Nick]
+                        username (default: None)
+            </pre>
+		</div>
+    </message>
+
+	<message id="soc.checklist">
+<![CDATA[
+		<h1>Checklist server</h1>
+		<div class="dark">
+		<p>Spaceship starts and missions to undiscovered areas of the universe need a lot of tasks to be carried out in the right order. Now there is the new checklist server to save all your important steps. With a secret passcode you can protect your confidential information.</p>
+		<p>You may use this private key for connecting to ssh port 220 with user checklist:</p>
+			<div style="height: 250px; width: 600px; overflow: scroll;"><pre>-----BEGIN RSA PRIVATE KEY-----
+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
+-----END RSA PRIVATE KEY-----</pre></div>
+Please note:<br />
+You must not revoke access rights for this key!<br />
+Confidentiality for this key is still present since it is available to authorized starfleet commanders.<br />
+		<p>
+			These commands are available to manage your checklists on the server:
+        </p>
+			<ul>
+				<li>
+					Command &quot;list&quot;:<br />
+					Display a list of the 30 latest checklist entries.<br />
+				</li>
+				<li>
+					Command &quot;insert &lt;sequence-number> &lt;passcode&gt; &lt;value&gt;&quot;:<br />
+					Insert a new entry in checklist.<br />
+					&lt;sequence-number&gt; must consist of 10 to 30 numeric characters.<br />
+					&lt;passcode&gt; must consist of 10 to 30 alphanumeric characters.<br />
+					&lt;value&gt; must consist of 1 to 120 alphanumeric characters.<br />
+					There must not be duplicate entries for the same sequence number.<br />
+				</li>
+				<li>
+					Command &quot;read &lt;sequence-number&gt; &lt;passcode&gt;&quot;:<br />
+					Shows value of entry which is identified by sequence-number and passcode.<br />
+					&lt;sequence-number&gt; must consist of 10 to 30 numeric characters.<br />
+					&lt;passcode&gt; must consist of 10 to 30 alphanumeric characters.<br />
+				</li>
+				<li>
+					Command &quot;help&quot;:<br />
+					Show some help text.
+				</li>
+			</ul>
+		</div>
+]]>
+	</message>
+
+	<message id="soc.impressum">
+		<h1>Impressum</h1>
+		<div class="dark">
+			<h2>ESSE Lectures SS2014 Team</h2>
+            <p style="float:right;text-align:right; margin-right:5em; margin-top:2em;">
+                <img src="resources/esse.png" alt="ESSE" title="ESSE" />
+            </p>
+			<ul>
+				<li>Alexander Litzellachner</li>
+				<li>Alexander Nawratil</li>
+				<li>Andreas Brandstaetter</li>
+				<li>Bernhard Redl</li>
+				<li>Botond Fazekas</li>
+				<li>Christian Ohrfandl</li>
+				<li>Christian Schanes</li>
+				<li>Florian Fankhauser</li>
+				<li>Lucas Telefont</li>
+				<li>Markus Gruber</li>
+				<li>Martin Hackl</li>
+				<li>Martin Moutran</li>
+				<li>Matthias Sperl</li>
+				<li>Paul Gueltekin</li>
+			</ul>
+			<h2>Contact</h2>
+			<ul>
+				<li><a href="mailto:lva.security@inso.tuwien.ac.at">lva.security@inso.tuwien.ac.at</a></li>
+				<li><a href="mailto:esse@inso.tuwien.ac.at">esse@inso.tuwien.ac.at</a></li>
+			</ul>
+			<h2>Links</h2>
+			<ul>
+				<li><a href="http://security.inso.tuwien.ac.at/" target="_blank">ESSE Home</a></li>
+				<li><a href="http://www.defragmented-brains.at/" target="_blank">Defragmented Brains (ESSE's CTF Team)</a></li>
+			</ul>
+			<h2>Credits</h2>
+			<ul>
+				<li><img class="extern" src="resources/extern.png" title="(external link)" alt="(external link)" /><a href="http://www.spacetelescope.org/images/heic0822b/" target="_blank">Background image (Credit: NASA, ESA and Jesús Maíz Apellániz (Instituto de Astrofísica de Andalucía, Spain)</a></li>
+				<li><img class="extern" src="resources/extern.png" title="(external link)" alt="(external link)" /><a href="http://pixabay.com/en/rocket-spaceship-space-travel-147800" target="_blank">Logo (unmodified, public domain)</a></li>
+				
+				
+				<li><img class="extern" src="resources/extern.png" title="(external link)" alt="(external link)" /><a href="http://pixabay.com/de/sonnensystem-planeten-planetensystem-11111/" target="_blank">Planetdatabase mainpage</a></li>
+				<li><img class="extern" src="resources/extern.png" title="(external link)" alt="(external link)" /><a href="http://upload.wikimedia.org/wikipedia/commons/8/80/Artist’s_impression_of_the_deep_blue_planet_HD_189733b.jpg" target="_blank">Planetdatabase add Planet</a></li>
+				<li><img class="extern" src="resources/extern.png" title="(external link)" alt="(external link)" /><a href="http://jamesmahonirl.files.wordpress.com/2012/05/11066278-global-future-with-warming-uncertainty-and-questions-featuring-the-planet-earth-with-a-continent-in.jpg" target="_blank">Planetdatabase query</a></li>
+			</ul>
+		</div>
+	</message>
+
+	<message id="Wt.Auth.template.login">
+		<p>
+			The SOC allows officers to fulfill important tasks to keep the current mission on track.
+        </p>
+        <p>
+            Therefore, the SOC provides key services like the <em>Starship Configuration Center</em>, <em>Planet Database</em>, <em>Logbook Generator</em>, <em>Holodeck Program Database</em> and <em>Kartographic Services</em>.
+        </p>
+        <p>
+            The services were planned and implemented taking into account the latest 23rd century security findings!
+		</p>
+		<p>
+			Access to the SOC is for authenticated startfleet officers only!
+		</p>
+		<ul>
+			<li>
+				<label for="${id:user-name}">${user-name-label}</label>
+				${user-name}
+			</li>
+			<li>
+				<label for="${id:password}">${tr:Wt.Auth.password}</label>
+				${password}
+			</li>
+		</ul>
+
+		<div>
+			${login}
+		</div>
+	</message>
+
+</messages>

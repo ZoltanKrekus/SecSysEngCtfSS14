@@ -1,0 +1,127 @@
+/*
+ * logbook styles
+ */
+
+h2 {
+	font-family: Impact, Impact5, Charcoal6, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;	
+}
+
+a {
+	color: #0096D2;
+	cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #59B329;
+	text-decoration: underline;
+}
+
+header {
+	background: #bbb;
+	border-bottom: 0.25em solid #999;
+	box-shadow: 0 -1px rgba(255, 255, 255, 0.05) inset, 0 1px rgba(0, 0, 0, 0.05);
+	line-height: 4em;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+nav {
+}
+
+nav ul {
+	list-style: none;
+	margin: 0.5em 0;
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	display: block;
+	padding: 0 0.5em;
+	line-height: 3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	padding: 10px 0;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+thead {
+	background: #888;
+	font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background: #333;
+}
+
+th, td {
+	padding: 10px 15px;
+}
+
+th {
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	border-right: 1px solid #555;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+th:first-child {
+  border-left: 1px solid #555;
+}
+
+td {
+	border-bottom: 1px solid #777;
+	border-right: 1px solid #777;
+}
+
+td:first-child {
+  border-left: 1px solid #777;
+}
+
+td a {
+	display: block;
+}
+
+#content {
+	clear: both;
+	margin: 0 auto;
+}
+
+#generator textarea {
+	resize: vertical;
+	width: 90%;
+	height: 300px;
+	max-height: 500px;
+}
+
+.row:before {
+	content: "";
+}
+
+.row {
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+.header-logo, .header-logo:hover {
+	display: block;
+	color: #fff;
+	font-family: Impact, Impact5, Charcoal6, sans-serif;
+	font-size: 1.75em;
+	font-weight: bold;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}

@@ -1,0 +1,5 @@
+#openssl passwd -1
+#username passwd-hash
+
+captain $1$NtdM1scC$dmAvN/jZvRbxdC1xKY069/
+number1 $1$V.33U4Op$EmvBVsdMZlr4ujaEEKyJw1

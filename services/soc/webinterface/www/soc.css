@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+/******************************************************/
+/* reset browser stylesheet                           */
+/******************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/******************************************************/
+/* terminal stylesheet                                */
+/******************************************************/
+
+h1 {
+	font-size: 100%;
+	font-weight: normal;
+	font: 30px sans-serif;
+	margin: 0;
+}
+
+h1.big {
+	font: 45px sans-serif;
+}
+
+hr {
+	background-color: #E2E2E2;
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 1px;
+	margin-bottom: 10px;
+	margin-top: 1px;
+	width: 100%;
+}
+
+a:hover {
+	color: blue;
+}
+
+a {
+	color: yellow;
+	font: bold 12px Verdana;
+	text-decoration: none;
+}
+
+body {
+	background-color: black;
+	background-image: url("/background.png");
+	background-repeat:no-repeat;
+	color: white;
+	font: 12px Verdana;
+	margin: 8px;
+}
+
+label {
+	margin-right: 10px;
+}
+
+#page {
+	margin: 0 auto;
+	width: 1178px;
+}
+
+iframe {
+	padding: 5px;
+	min-height: 500px;
+}
+
+div.dark {
+	padding: 5px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+div#logmessages {
+	overflow:   auto;
+	height:     50em;
+}
+
+div#cartchart-mem-terminalcore {
+}
+
+div#piechart-mem {
+	/*position:   absolute;
+	top:        21em;
+	right:      0;
+	*/
+	float:  right;
+}
+
+div#staticinfo {
+	float:  left;
+}
+
+div#dynamicinfo {
+	float:  left;
+	width:  50%;
+}
+
+div#cellinfo {
+	float:  right;
+	width:  50%;
+}
+
+.columns {
+	overflow:hidden;
+	margin-bottom: 10px;
+}
+
+.columnContainer  {
+	float:left;
+	position:relative;
+	width:1178px;
+}
+
+.column {
+	float:left!important;
+	position:relative;
+}
+
+#column-right {
+	left: -960px;
+	position: relative;
+	width: 1178px;
+}
+
+/******************************************************/
+/* header stylings                                    */
+/******************************************************/
+
+#header.hover {
+	border-bottom: 8px solid #000000;
+}
+
+#header {
+	background-color: rgba(0,0,0,0.5);
+	margin-bottom: 10px;
+	position:relative;
+	height:128px;
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#logo-wrapper {
+	position:absolute;
+	left:30px;
+}
+
+#logo {
+	height: 120px;
+	background-repeat: no-repeat;
+	margin-top: 5px;
+}
+
+#title-wrapper {
+	position:absolute;
+	left:360px;
+	top: 25%;
+}
+
+/******************************************************/
+/* content stylings                                   */
+/******************************************************/
+
+#content {
+	position:relative;
+	background-color: rgba(0,0,0,0.5);
+	zoom: 1;
+}
+
+#page-content {
+	left: 970px;
+	margin: 20px 20px;
+	position: relative;
+	width: 910px;
+}
+
+#page-content .error {
+	text-align: center;
+	border: 5px solid #AE1003;
+	padding: 20px;
+
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+
+	box-shadow: 0 0 3px #000000;
+	-moz-box-shadow: 0 0 3px #000000;
+	-webkit-box-shadow: 0 0 3px #000000;
+}
+
+#page-content .confirm {
+	text-align: center;
+	border: 7px solid #f2ff00;
+	padding: 20px;
+
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+
+	box-shadow: 0 0 3px #000000;
+	-moz-box-shadow: 0 0 3px #000000;
+	-webkit-box-shadow: 0 0 3px #000000;
+}
+
+#page-content .success {
+	text-align: center;
+	border: 7px solid #528f07;
+	padding: 20px;
+
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+
+	box-shadow: 0 0 3px #000000;
+	-moz-box-shadow: 0 0 3px #000000;
+	-webkit-box-shadow: 0 0 3px #000000;
+}
+
+
+#page-content form, #page-content ul {
+	margin: 20px;
+}
+
+
+/******
+Table settings
+*/
+
+div#staticinfo > table.soc-table {
+	max-width:  360px;
+}
+
+#page-content table.soc-table {
+	margin: 20px 0px 20px 20px;
+}
+
+#page-content table.soc-table td { padding: 5px 20px 5px 0 }
+#page-content table tbody td { padding: 0 }
+#page-content table.soc-table tr:nth-child(odd) { background-color: #F2F2F2 }
+
+div#cellinfo .Wt-tableview .Wt-plaintable button {
+	text-align: right;
+	width: 100%;
+}
+
+div#cellinfo > div {
+	margin: 20px 0px 0px 20px;
+}
+
+div#routes {
+	margin: 20px;
+}
+
+.Wt-tv-br {
+	display: none;
+}
+
+#page-content label {
+	position: absolute;
+}
+
+#page-content div.pos_relative * {
+	position: relative;
+}
+
+div#door_contact_type_buttons {
+	width: 25%;
+	margin-bottom: 20px;
+	left: 200px;
+}
+
+div#door_contact_select_button {
+	float: right;
+	right: 30%;
+}
+
+div#door_details_button {
+	margin-left: 25%;
+	display:     inline;
+}
+
+div#door_details_button .Wt-btn {
+	margin-bottom: 0px;
+}
+
+#page-content input[type=text],
+#page-content input[type=file],
+#page-content select,
+#page-content input[type=password] {
+	position: relative;
+	left: 200px;
+	border: 1px dotted black;
+	padding: 1px 0 1px 1px;
+	margin: 2px 0;
+	min-width: 8em;
+	-webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: content-box;    /* Firefox, other Gecko */
+	box-sizing: content-box;
+}
+
+.soc-upload {
+	width:      30em;
+	margin-right: 11em;
+	display:    inline-block;
+	position:   relative;
+}
+
+#page-content #firmwareupload button.Wt-btn {
+	margin-left: 200px;
+}
+
+#page-content #brandingupload button.Wt-btn {
+	margin-left: 200px;
+}
+
+#page-content .soc-upload input {
+	position:   relative;
+	width:      100%;
+	margin: 	0;
+	left:      	0px;
+}
+
+#page-content button {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	margin-right: 0;
+}
+
+#page-content label#disableScrolling {
+	position: relative;
+}
+
+/*
+#firmwareupdate .Wt-progressbar {
+	position:   absolute;
+	left:       200px;
+}
+*/
+
+#page-content input[type=radio] {
+	clear: left;
+}
+
+#page-content table button {
+	margin: 0;
+	border: none 0;
+}
+
+#page-content h1 {
+	margin: 20px 0;
+	text-align: center;
+
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#page-content h1:first-child {
+	margin: 0 0 20px 0;
+}
+
+#page-content form ul li {
+	margin-top: 10px;
+}
+
+#page-content form ul li:first-child {
+	margin-top: 0px;
+}
+
+#page-content p {
+	border-bottom: 1px dotted #000000;
+	padding: 5px 0;
+}
+
+#page-content p:last-child {
+	border-bottom: 0;
+}
+
+/******************************************************/
+/* navigation stylings                                */
+/******************************************************/
+
+#navigation {
+	left: 960px;
+	margin: 20px;
+	width: 178px;
+}
+
+#navigation ul li {
+	margin: 5px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.25);
+}
+
+#navigation ul li a {
+	color: white;
+}
+
+#navigation ul li:active {
+	background-color: rgba(255,140,0,0.75);
+}
+
+#navigation ul li.active a {
+	text-decoration: none!important;
+}
+
+body, html {
+	height: 99%;
+}

@@ -1,0 +1,284 @@
+14:49:52.490 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - Entering application
+14:49:52.493 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - Checking database connection and integrity...
+14:49:52.493 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - #############################################
+14:49:52.501 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection -  > Database already exists! Location: /home/ksap/bin/at/ac/tuwien/inso/ss2014/ctf/dao/ctfWS2014.db
+14:49:52.501 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection -  > Testing database entries...
+
+14:49:53.846 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - =========
+14:49:53.846 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - ship test
+14:49:53.846 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - =========
+14:49:53.879 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 1 | IKS Amar | K't'inga-class battle cruiser | Destroyed | 123456789
+14:49:53.879 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 2 | IKS B'Moth | K't'inga-class battle cruiser | Destroyed | 123456789
+14:49:53.879 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 3 | IKS Bortas | D5 class battle cruiser | Disabled | 123456789
+14:49:53.881 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 4 | IKS Buruk | Bird-of-Prey | Active | 123456789
+14:49:53.882 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 5 | IKS Ch'Tang | Bird-of-Prey | Active | 123456789
+14:49:53.882 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 6 | IKS Drovana | Vor'cha-class attack cruiser | Disabled | 123456789
+14:49:53.882 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 7 | IKS Hor'Cha | Warship | Active | 123456789
+14:49:53.882 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 8 | TestFlag | flag | active | 111654645
+14:49:53.887 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 9 | FLAG123 | flag | flag | KEY123
+14:49:53.889 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 10 | flag-string-1400267222 | flag | flag | flag-key-140026
+14:49:53.889 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 11 | flag-string-1400267373 | flag | flag | flag-key-140026
+14:49:53.889 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 12 | flag-string-1400267395 | flag | flag | flag-key-140026
+14:49:53.890 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 13 | flag-string-1400267650 | flag | flag | flag-key-140026
+14:49:53.890 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 14 | flag-string-1400267686 | flag | flag | flag-key-140026
+14:49:53.890 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 15 | flag-string-1400267726 | flag | flag | flag-key-140026
+14:49:53.891 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 16 | flag-string-1400267796 | flag | flag | flag-key-140026
+14:49:53.898 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 17 | flag-string-1400268317 | flag | flag | flag-key-140026
+14:49:53.898 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 18 | flag-string-1400268342 | flag | flag | flag-key-140026
+14:49:53.898 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 19 | flag-string-1400268357 | flag | flag | flag-key-140026
+14:49:53.900 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 20 | flag-string-1400268427 | flag | flag | flag-key-140026
+14:49:53.900 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 21 | FLAG123 | flag | flag | KEY123
+14:49:53.900 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 22 | flag-string-1400276650 | flag | flag | flag-key-140027
+14:49:53.901 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection -  
+14:49:53.902 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - Database entries successfully tested!
+14:49:53.936 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - #############################################
+
+14:49:53.936 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - Database successully working!
+
+14:49:53.942 [main] INFO  a.a.t.i.s.ctf.conn.RpcNetworkService - Bound Server on 0.0.0.0/0.0.0.0:8449
+09:30:51.572 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - Entering application
+09:30:51.594 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - Checking database connection and integrity...
+09:30:51.594 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - #############################################
+09:30:51.600 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection -  > Database already exists! Location: /home/ksap/bin/at/ac/tuwien/inso/ss2014/ctf/dao/ctfWS2014.db
+09:30:51.601 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection -  > Testing database entries...
+
+09:30:52.389 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - =========
+09:30:52.389 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - ship test
+09:30:52.389 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - =========
+09:30:52.428 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 1 | IKS Amar | K't'inga-class battle cruiser | Destroyed | 123456789
+09:30:52.429 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 2 | IKS B'Moth | K't'inga-class battle cruiser | Destroyed | 123456789
+09:30:52.430 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 3 | IKS Bortas | D5 class battle cruiser | Disabled | 123456789
+09:30:52.433 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 4 | IKS Buruk | Bird-of-Prey | Active | 123456789
+09:30:52.434 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 5 | IKS Ch'Tang | Bird-of-Prey | Active | 123456789
+09:30:52.435 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 6 | IKS Drovana | Vor'cha-class attack cruiser | Disabled | 123456789
+09:30:52.435 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 7 | IKS Hor'Cha | Warship | Active | 123456789
+09:30:52.436 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 8 | TestFlag | flag | active | 111654645
+09:30:52.439 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 9 | FLAG123 | flag | flag | KEY123
+09:30:52.440 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 10 | flag-string-1400267222 | flag | flag | flag-key-140026
+09:30:52.441 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 11 | flag-string-1400267373 | flag | flag | flag-key-140026
+09:30:52.441 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 12 | flag-string-1400267395 | flag | flag | flag-key-140026
+09:30:52.442 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 13 | flag-string-1400267650 | flag | flag | flag-key-140026
+09:30:52.443 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 14 | flag-string-1400267686 | flag | flag | flag-key-140026
+09:30:52.443 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 15 | flag-string-1400267726 | flag | flag | flag-key-140026
+09:30:52.444 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 16 | flag-string-1400267796 | flag | flag | flag-key-140026
+09:30:52.444 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 17 | flag-string-1400268317 | flag | flag | flag-key-140026
+09:30:52.445 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 18 | flag-string-1400268342 | flag | flag | flag-key-140026
+09:30:52.449 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 19 | flag-string-1400268357 | flag | flag | flag-key-140026
+09:30:52.452 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 20 | flag-string-1400268427 | flag | flag | flag-key-140026
+09:30:52.452 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 21 | FLAG123 | flag | flag | KEY123
+09:30:52.453 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - 22 | flag-string-1400276650 | flag | flag | flag-key-140027
+09:30:52.453 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection -  
+09:30:52.456 [main] INFO  a.a.t.i.s.ctf.dao.SQLiteDBConnection - Database entries successfully tested!
+09:30:52.500 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - #############################################
+
+09:30:52.501 [main] INFO  a.a.t.inso.ss2014.ctf.MainServer - Database successully working!
+
+09:30:52.509 [main] INFO  a.a.t.i.s.ctf.conn.RpcNetworkService - Bound Server on 0.0.0.0/0.0.0.0:8449
+09:33:04.152 [pool-1-thread-1] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 52840
+09:33:04.163 [pool-1-thread-1] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+09:33:04.164 [pool-1-thread-1] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 040620140943009JRAQCKVYHSJNB55NO flag active 3OSFYK1UV5GU2LD6
+09:33:04.166 [pool-1-thread-1] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (040620140943009JRAQCKVYHSJNB55NO, flag, active, 3OSFYK1UV5GU2LD6);
+09:33:04.394 [pool-1-thread-1] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 23
+09:33:04.398 [pool-1-thread-1] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+09:33:04.399 [pool-1-thread-1] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+09:33:04.400 [pool-1-thread-1] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:30:01.829 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53017
+10:30:01.831 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:30:01.832 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !getships 3OSFYK1UV5GU2LD6
+10:30:01.833 [pool-1-thread-2] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: SELECT * FROM ship WHERE key = '3OSFYK1UV5GU2LD6'
+10:30:01.867 [pool-1-thread-2] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 23 | 040620140943009JRAQCKVYHSJNB55NO | flag | active | 3OSFYK1UV5GU2LD6
+10:30:01.868 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: 23 | 040620140943009JRAQCKVYHSJNB55NO | flag | active | 3OSFYK1UV5GU2LD6
+10:30:01.869 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:30:01.872 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:30:14.531 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53170
+10:30:14.533 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:30:14.535 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 04062014104001F0SNKG926EOX7HNK9H flag active 4LVBFBF5C48LXHUC
+10:30:14.536 [pool-1-thread-2] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (04062014104001F0SNKG926EOX7HNK9H, flag, active, 4LVBFBF5C48LXHUC);
+10:30:14.731 [pool-1-thread-2] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 24
+10:30:14.736 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+10:30:14.738 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:30:14.738 [pool-1-thread-2] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:33:31.154 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53341
+10:33:31.155 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:33:31.156 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !getships 4LVBFBF5C48LXHUC
+10:33:31.156 [pool-1-thread-3] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: SELECT * FROM ship WHERE key = '4LVBFBF5C48LXHUC'
+10:33:31.188 [pool-1-thread-3] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 24 | 04062014104001F0SNKG926EOX7HNK9H | flag | active | 4LVBFBF5C48LXHUC
+10:33:31.188 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: 24 | 04062014104001F0SNKG926EOX7HNK9H | flag | active | 4LVBFBF5C48LXHUC
+10:33:31.189 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:33:31.189 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:33:42.201 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53493
+10:33:42.202 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:33:42.203 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 04062014104331R8G19HMZLBB0WQ4JLP flag active B1N5TIDSK7KBK8PP
+10:33:42.204 [pool-1-thread-3] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (04062014104331R8G19HMZLBB0WQ4JLP, flag, active, B1N5TIDSK7KBK8PP);
+10:33:42.348 [pool-1-thread-3] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 25
+10:33:42.350 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+10:33:42.351 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:33:42.352 [pool-1-thread-3] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:37:01.138 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53664
+10:37:01.141 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:37:01.142 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !getships B1N5TIDSK7KBK8PP
+10:37:01.142 [pool-1-thread-4] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: SELECT * FROM ship WHERE key = 'B1N5TIDSK7KBK8PP'
+10:37:01.170 [pool-1-thread-4] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 25 | 04062014104331R8G19HMZLBB0WQ4JLP | flag | active | B1N5TIDSK7KBK8PP
+10:37:01.170 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: 25 | 04062014104331R8G19HMZLBB0WQ4JLP | flag | active | B1N5TIDSK7KBK8PP
+10:37:01.173 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:37:01.174 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:37:12.790 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53816
+10:37:12.810 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:37:12.811 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 040620141047011XQT56ROG6L5VIRU53 flag active 57O8FKF3E3C9DXNK
+10:37:12.812 [pool-1-thread-4] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (040620141047011XQT56ROG6L5VIRU53, flag, active, 57O8FKF3E3C9DXNK);
+10:37:12.927 [pool-1-thread-4] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 26
+10:37:12.929 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+10:37:12.930 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:37:12.930 [pool-1-thread-4] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:40:31.245 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 53987
+10:40:31.247 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:40:31.248 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !getships 57O8FKF3E3C9DXNK
+10:40:31.249 [pool-1-thread-5] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: SELECT * FROM ship WHERE key = '57O8FKF3E3C9DXNK'
+10:40:31.279 [pool-1-thread-5] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 26 | 040620141047011XQT56ROG6L5VIRU53 | flag | active | 57O8FKF3E3C9DXNK
+10:40:31.280 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: 26 | 040620141047011XQT56ROG6L5VIRU53 | flag | active | 57O8FKF3E3C9DXNK
+10:40:31.281 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:40:31.282 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:40:42.150 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 54139
+10:40:42.152 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:40:42.153 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 04062014105031TP898BCPSQ6W61MMOJ flag active JR0H4GYYWEKA6HFI
+10:40:42.154 [pool-1-thread-5] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (04062014105031TP898BCPSQ6W61MMOJ, flag, active, JR0H4GYYWEKA6HFI);
+10:40:42.352 [pool-1-thread-5] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 27
+10:40:42.358 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+10:40:42.359 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:40:42.359 [pool-1-thread-5] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:44:01.247 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 54310
+10:44:01.249 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:44:01.250 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !getships JR0H4GYYWEKA6HFI
+10:44:01.250 [pool-1-thread-6] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: SELECT * FROM ship WHERE key = 'JR0H4GYYWEKA6HFI'
+10:44:01.270 [pool-1-thread-6] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 27 | 04062014105031TP898BCPSQ6W61MMOJ | flag | active | JR0H4GYYWEKA6HFI
+10:44:01.270 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: 27 | 04062014105031TP898BCPSQ6W61MMOJ | flag | active | JR0H4GYYWEKA6HFI
+10:44:01.271 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:44:01.272 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:44:12.232 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 54462
+10:44:12.234 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:44:12.235 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 04062014105401AS7D92C4NIB4J26WJ3 flag active W7FEK46SWCE7MWOE
+10:44:12.235 [pool-1-thread-6] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (04062014105401AS7D92C4NIB4J26WJ3, flag, active, W7FEK46SWCE7MWOE);
+10:44:12.385 [pool-1-thread-6] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 28
+10:44:12.387 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+10:44:12.388 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:44:12.388 [pool-1-thread-6] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:47:31.156 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 54633
+10:47:31.157 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:47:31.157 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !getships W7FEK46SWCE7MWOE
+10:47:31.157 [pool-1-thread-7] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: SELECT * FROM ship WHERE key = 'W7FEK46SWCE7MWOE'
+10:47:31.174 [pool-1-thread-7] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 28 | 04062014105401AS7D92C4NIB4J26WJ3 | flag | active | W7FEK46SWCE7MWOE
+10:47:31.174 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: 28 | 04062014105401AS7D92C4NIB4J26WJ3 | flag | active | W7FEK46SWCE7MWOE
+10:47:31.175 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:47:31.175 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)
+10:47:41.659 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Established connection to remote host 10.10.40.200 (10.10.40.200) at remote port 54785
+10:47:41.660 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: tlhIngan ghov SoH pat! nej Duj pong (per Duj pong). chuH " baq " bup
+Recognized human encoding format...
+Changing language to english...
+Instructions:
+!getships <key> --> Selects ships with specified key
+!addship <name of ship> <type of ship> <status of ship> <key> --> Stores a ship into the database
+!terminate --> Closes the connection
+Example...
+!getships 123456789 --> retrieves ships stored with key 123456789 - Give it a try ;-)
+10:47:41.661 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Client sent (decoded): !addship 04062014105731M3F4E50H69ACV5Z80G flag active ADEK3WUXOEUY8J6D
+10:47:41.663 [pool-1-thread-7] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - 10.10.40.200 (10.10.40.200) - Query: INSERT INTO ship (name, type, status, key) VALUES (04062014105731M3F4E50H69ACV5Z80G, flag, active, ADEK3WUXOEUY8J6D);
+10:47:41.807 [pool-1-thread-7] INFO  a.a.tuwien.inso.ss2014.ctf.dao.Query - Successfully created new ship with ID 29
+10:47:41.808 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Server-Response: Successfully added ship!
+10:47:41.809 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closing Connection to 10.10.40.200 (10.10.40.200)
+10:47:41.810 [pool-1-thread-7] INFO  a.a.t.i.ss2014.ctf.conn.RpcHandler - 10.10.40.200 (10.10.40.200): Closed Connection to 10.10.40.200 (10.10.40.200)

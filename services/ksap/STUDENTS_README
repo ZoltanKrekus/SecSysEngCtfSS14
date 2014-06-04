@@ -1,0 +1,13 @@
+########################################################
+### Klingon Spaceship Administration Program (K-SAP) ###
+########################################################
+
+start|stop|restart|status:
+==========================
+/etc/init.d/ksap start|stop|restart|status
+
+Compile:
+========
+Vor compile: /etc/init.d/ksap stop
+Danach: /home/ksap/compile.sh
+Abschließend: /etc/init.d/ksap start

@@ -1,0 +1,124 @@
+ ******************SPACESHIP AI DOCUMENTATION*****************
+ 
+//////////////////////|||||||||||||||||||||||\\\\\\\\\\\\\\\\\\\\\\
+       This is the short documentation of the Spaceship AI.
+\\\\\\\\\\\\\\\\\\\\\\|||||||||||||||||||||||//////////////////////
+The Spaceship uses basically a subset of the powerful ancient NASM technology,
+to create programs.
+
+These programs run in a machine where each user gets a slot and 1KB memory.
+
+A normal AI program has two parts:
+   - Data definition part
+   - Code part
+
+In the data definition parts you can either define a byte sequence (if needed then like a string) or an integer constant.
+The data definition part has to start with section .data.
+A sample data definition part:
+////////////////////////////////////////////////////////////
+        section .data
+        stringData: db "Hello World", 0         ;With the terminating zero at the end.
+        constant: equ 1024                      ;And an integer constant.
+////////////////////////////////////////////////////////////
+
+"section .text" marks the beginning of the code part, where _start label is the entry point.
+
+Thus a small program which does nothing but sets eax to 1, and stores some data looks like this:
+
+////////////////////////////////////////////////////////////
+        section .data
+        stringData: db "Hello World", 0         
+        constant: equ 1024                      
+
+        section .text
+          _start:
+          mov eax, 1
+////////////////////////////////////////////////////////////
+
+And of course the classical Hello World:
+////////////////////////////////////////////////////////////
+        section .data
+        hw: db "Hello World", 0
+
+        section .text
+          _start:
+          lea eax, hw                                           ;We store the address of Hello World in eax
+          call print                                            ;And print it
+////////////////////////////////////////////////////////////
+
+A bit more complicated example calculates a few fibonacci numbers:
+////////////////////////////////////////////////////////////
+        section .text                    
+        _start:
+          mov ebx, 1              ; The first number
+          mov edx, 1              ; The second number
+          mov ecx, 20             ; We want the first 20 fibonacci numbers starting with the third one
+          loopstart:
+          mov eax, ebx
+          add eax, edx            ; temp = b + d
+          mov ebx, edx            ; b = d
+          mov edx, eax            ; d = temp
+          call printint           ; print eax
+          loop loopstart          ; ecx--; while ecx != 0
+////////////////////////////////////////////////////////////
+
+The built-in functions expect their parameters (if they have) always in eax.
+Also, they put their return value there.
+For the list of the built in functions refer to Appendix C
+
+=======================================================================
+Appendix A - Registers
+=======================================================================
+The following registers are supported (and partial support for their smaller variants):
+eax, ebx, ecx, edx, ebp, esp, esi, edi.
+
+ESP is like always the stack pointer. The stack grows top->bottom.
+
+=======================================================================
+Appendix B - Instruction set
+=======================================================================
+The compiler uses an NASM like (Intel) syntax.
+This means:
+INST dst, src
+
+The types of the source and destinations are not noted because they are in
+most cases obvious. If they aren't the compiler'll scream. 
+--------------------------------------------------
+Instructions:
+add dst, src       - dst += src
+and dst, src       - dst &= src
+call FUNCTIONNAME  - Calls a function. For the function usages please refer to Appendix C
+cmp dst, src       - Compares the two values and sets the flags for the jump operations
+div dst, src       - dst /= src
+jmp LABEL          - Unconditional jump to LABEL
+je LABEL           - jump to LABEL if equal
+jl LABEL           - jump if less
+jle LABEL          - jump if less or equal
+jne LABEL          - jump if not equal
+jg LABEL           - jump if greater
+jge LABEL          - jump if greater or equal
+jz LABEL           - jump if zero
+jnz LABEL          - jump if not zero
+lea dst, DATA_NAME - loads the effective address of the data defined in the data section. Needed only for byte arrays
+lea dst, [eax + 4 * ebx + 2 ] - More complicated arithmetical operations. Only registers and constants can be part of such an expression.
+loop LABEL         - decrease ecx, if ecx != 0, jump to LABEL
+mov dst, src       - dst = src
+mul dst, src       - dst *= src
+or dst, src        - dst |= src
+pop dst            - Pops the uppermost item from the stack to dst and removes it
+push src           - Pushes src to the stack
+ret                - Terminates the program
+shl dst, src       - dst <<= src
+shr dst, src       - dst >>= src
+sub dst, src       - dst -= src
+xor dst, src       - dst ^= src
+
+=======================================================================
+Appendix C - Callable functions
+=======================================================================
+Currently there are 5 built-in functions:
+print     - prints the string starting @ [eax]. String terminator is 0.
+printint  - Prints the integer stored in eax.
+procaddr  - Puts the global-memory address of the AI-Prorgram into eax
+usercount - Puts the number of the users on the server into eax
+memsize   - Puts the size of the total available memory per user into eax

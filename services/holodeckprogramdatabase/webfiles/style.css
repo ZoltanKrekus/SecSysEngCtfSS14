@@ -1,0 +1,39 @@
+body {
+	color: white;
+	font: 12px Verdana;
+	margin: 8px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+h1 {
+	font-size: 100%;
+	font-weight: normal;
+	font: 30px sans-serif;
+	margin: 0;
+}
+
+hr {
+	background-color: #E2E2E2;
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 1px;
+	margin-bottom: 10px;
+	margin-top: 1px;
+	width: 100%;
+}
+
+a:hover {
+	color: blue;
+}
+
+a {
+	color: yellow;
+	font: bold 12px Verdana;
+	text-decoration: none;
+}
+
+label {
+	margin-right: 10px;
+}
+

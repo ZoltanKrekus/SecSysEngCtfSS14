@@ -1,0 +1,87 @@
+#!/bin/bash
+
+SOC="${SSH_ORIGINAL_COMMAND}"
+
+echo "~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~"
+echo "~.~  Hello, you are connected to universial checklist service!   ~.~"
+echo "~.~  Use command \"help\" to get an overview of available options  ~.~"
+echo "~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~  ~.~"
+
+
+if [ "${SOC}" = "help" ]
+then
+	echo "~.~ help ~.~"
+	echo ""
+	echo "Command \"help\":"
+	echo "        Show this help text."
+	echo "Command \"list\":"
+	echo "        Display a list of the 30 latest checklist entries."
+	echo "Command \"insert <sequence-number> <passcode> <value>\":"
+	echo "        Insert a new entry in checklist."
+	echo "        <sequence-number> must consist of 10 to 30 numeric characters."
+	echo "        <passcode> must consist of 10 to 30 alphanumeric characters."
+	echo "        <value> must consist of 1 to 120 alphanumeric characters."
+	echo "        There must not be duplicate entries for the same sequence number."
+	echo "Command \"read <sequence-number> <passcode>\":"
+	echo "        Shows value of entry which is identified by sequence-number and passcode."
+	echo "        <sequence-number> must consist of 10 to 30 numeric characters."
+	echo "        <passcode> must consist of 10 to 30 alphanumeric characters."
+
+elif [ "${SOC}" = "list" ]
+then
+	echo "~.~ list ~.~"
+
+	CMD="SELECT \`sequence\`, \`date\` FROM \`checklist\` ORDER BY \`date\` DESC LIMIT 0, 30"
+	mysql --user=checklist checklist -e "$CMD;"
+	echo "End of list."
+
+elif [[ "${SOC}" =~ ^insert[\ ][0-9]{10,30}[\ ][A-Za-z0-9]{10,30}[\ ][\ A-Za-z0-9]{1,120}$ ]]
+then
+	echo "~.~ insert ~.~"
+
+	DEL=`expr index "${SOC}" " "`
+	TMPSTR=${SOC:$DEL}
+	DEL=`expr index "${TMPSTR}" " "`
+	SEQ=${TMPSTR:0:((DEL-1))}
+	
+	TMPSTR=${TMPSTR:$DEL}
+	DEL=`expr index "${TMPSTR}" " "`
+	PAC=${TMPSTR:0:((DEL-1))}
+	
+	VAL=${TMPSTR:$DEL}
+	
+	DATE=`date +%Y-%m-%d\ %H:%M:%S`
+	
+	CMD="INSERT INTO \`checklist\` SET \`sequence\`='${SEQ}', \`passcode\`='${PAC}', \`value\`='${VAL}', \`date\`='${DATE}'"
+	mysql --user=checklist checklist -e "$CMD;" > /dev/null 2> /dev/null
+	if [ $? -eq 0 ]
+	then
+	    echo "Inserted entry."
+	else
+	    echo "There occured an error while inserting your entry."
+	fi;
+
+elif [[ "${SOC}" =~ ^read[\ ][0-9]{10,30}[\ ][A-Za-z0-9]{10,30}$ ]]
+then
+	echo "~.~ read ~.~"
+
+	DEL=`expr index "${SOC}" " "`
+	TMPSTR=${SOC:$DEL}
+	DEL=`expr index "${TMPSTR}" " "`
+	SEQ=${TMPSTR:0:((DEL-1))}
+	
+	PAC=${TMPSTR:$DEL}
+	
+	DATE=`date +%Y-%m-%d\ %H:%M:%S`
+	
+	CMD="SELECT \`sequence\`, \`value\` FROM \`checklist\` WHERE \`sequence\`='${SEQ}' AND \`passcode\`='${PAC}'"
+	mysql --user=checklist checklist -e "$CMD;"
+	echo "End of read."
+
+else
+	echo "invalid or no command supplied."
+	exit 1;
+fi;
+
+exit 0;
+
