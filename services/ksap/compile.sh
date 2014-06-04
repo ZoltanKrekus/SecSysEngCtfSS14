@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/ksap
+#cd /home/ksap
 mkdir -p bin
 mkdir -p log
 cp resources/logback.xml bin/

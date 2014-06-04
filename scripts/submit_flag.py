@@ -3,9 +3,9 @@ import sys
 import socket
 import sys
 
-CONST_GAME_SERVER_IP = "192.168.40.200"
+CONST_GAME_SERVER_IP = "10.10.40.200"
 CONST_GAME_SERVER_PORT = 80
-CONST_GAME_SERVER_SUBMIT_URL = "/SubmitFlagServlet?teamInput=117&flagInput="
+CONST_GAME_SERVER_SUBMIT_URL = "/SubmitFlagServlet?teamInput=122&flagInput="
 DEBUG_MODE = False
 
 def sreadline(sock):
@@ -39,11 +39,4 @@ if __name__ == '__main__':
 	submitUrl = "GET " + CONST_GAME_SERVER_SUBMIT_URL + flag + " HTTP/1.1\r\nHost: " + CONST_GAME_SERVER_IP + "\n"
 	logDebug("write to:" + submitUrl)
         swriteline(sock, submitUrl)
-
-	print sock.recv(4000)
-	print sock.recv(4000)
-	print sock.recv(4000)
-	print sock.recv(4000)
-
-
 	sock.close()
