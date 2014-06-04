@@ -1,0 +1,24 @@
+Titel:
+planetdatabase
+
+Überblick:
+
+
+Beschreibung:
+Über das File input.php kann man Files anlegen lassen (mit dem Planetnamen). Mittels output.php lassen sich Files anzeigen, indem man deren Namen aufruft. Der Aufruf erfolgt über ein Shell Commando (passthru), das das Filename an das Programm planetdb übergibt, das wiederum das Shell Commando "cat filename" aufruft, um das File im Browser anzuzeigen. 
+
+Schwachstelle:
+Es wird zwar mittels der PHP Funktion "escapeshellarg" der Filename mit Hochkommas umschlossen, aber das bringt beim Aufruf von planetdb nichts, da hier trotzdem der Filename übergeben wird. Dadurch ist es möglich, die Dateinamen mit Shell Commandos zu bennenen und sie ausführen zu lassen. Bspw: x;ls -t planets | head -1 | cat
+um den Inhalt der aktuellsten Datei anzuzeigen.
+
+Außerdem würden Spezialchars wie "cat *" alle Inhalte ausgeben.
+
+Behebung:
+Im planetdb Programm muss der Filename an cat mit Hochkommas übergeben werden, damit nichts als Shell Kommando oder Spezialchars interpretiert wird.
+Code:
+    strncpy(cmd, "cat \"", 5);
+    strncat(cmd, filename, PATH_MAX - strlen(cmd) - 1);
+    strncat(cmd,"\"",1);
+
+Hier wird statt cat filename jetzt cat "filename" aufgerufen.
+
